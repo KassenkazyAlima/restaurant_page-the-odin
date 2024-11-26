@@ -1,7 +1,7 @@
 export default function loadMenu() {
     const menu = document.createElement('div');
     menu.innerHTML = `
-    <h1>Our Menu</h1>
+    <h1>Menu</h1>
     <p>Explore our diverse selection of dishes:</p>
     <ul style="list-style: none; padding: 0;">
       <li>Mezzaluna - $$$</li>
