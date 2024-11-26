@@ -1,19 +1,37 @@
-import loadHome from './home';
-import loadMenu from './menu';
-import loadContact from './contact';
-
-function loadPage(pageFunction) {
-  const content = document.getElementById('content');
-  content.innerHTML = ''; 
-  content.appendChild(pageFunction()); 
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  const navButtons = document.querySelectorAll('nav button');
-  navButtons[0].addEventListener('click', () => loadPage(loadHome));
-  navButtons[1].addEventListener('click', () => loadPage(loadMenu));
-  navButtons[2].addEventListener('click', () => loadPage(loadContact));
-
-  loadPage(loadHome); //by default
+document.getElementById('home').addEventListener('click', () => {
+  document.getElementById('content').innerHTML = `
+      <div>
+          <h1>Welcome to Our Restaurant</h1>
+          <p>Enjoy delicious food and great ambiance!</p>
+          <img src="https://via.placeholder.com/600x400" alt="Restaurant" style="width: 80%; border-radius: 10px;">
+      </div>
+  `;
 });
+
+document.getElementById('menu').addEventListener('click', () => {
+  document.getElementById('content').innerHTML = `
+      <div>
+          <h1>Our Menu</h1>
+          <p>Delicious dishes crafted with love and care.</p>
+          <ul>
+              <li>Pizza</li>
+              <li>Pasta</li>
+              <li>Salad</li>
+              <li>Desserts</li>
+          </ul>
+      </div>
+  `;
+});
+
+document.getElementById('contact').addEventListener('click', () => {
+  document.getElementById('content').innerHTML = `
+      <div>
+          <h1>Contact Us</h1>
+          <p>Email: contact@ourrestaurant.com</p>
+          <p>Phone: +123 456 7890</p>
+      </div>
+  `;
+});
+
+// Load Home page by default
+document.getElementById('home').click();
