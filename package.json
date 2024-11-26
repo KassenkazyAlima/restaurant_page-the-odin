@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.x",
+    "webpack": "^5.x",
+    "webpack-cli": "^5.x",
+    "webpack-dev-server": "^5.x",
+    "style-loader": "^3.x",
+    "css-loader": "^6.x"
+  } 
+}
+

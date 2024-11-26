@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  nav button {
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #ddd;
+  }
+  
+  #content {
+    padding: 2em;
+    text-align: center;
+  }
+  
